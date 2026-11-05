@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activité 1</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI',
+            helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+            'Segoe UI Symbol';
+            padding: 0.5%;
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+
+        img {
+            padding-right: 1%;
+            padding-bottom: 1.5%;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        table{
+        border-collapse: collapse
+        }
+
+        td, th{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        }
+
+        .capteur {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .nop {
+            border: 0px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>L'informatique embarqué</h1>
+        <p>Activité 1 - Travail à rendre</p>
+    </center>
+    <hr>
+    <h2>1. Repères historiques de l'informatique embarqué</h2>
+    <p>Visualiser la vidéo suivante puis créer une frise chronologique en vous aidant des images.</p>
+    <p><a href="https://www.yout-ube.com/embed/mT2X559Wy_Q?playlist=mT2X559Wy_Q&autoplay=1&iv_load_policy=3&loop=1&start=">Lien de la vidéo</a> (Pensez à actualiser si besoin)</p>
+    <p>Voici les images :</p>
+    <img src="https://cdn-s-www.leprogres.fr/images/F5C0E813-51AF-40F3-9F9A-F030E7D749F7/NW_raw/iphone-2g-(2007)-le-tout-premier-iphone-aussi-appele-quot-iphone-2g-quot-detonne-avec-son-ecran-entierement-tactile-de-3-5-pouces-son-appareil-photo-son-lecteur-multimedia-son-systeme-d-exploitation-quot-iphone-os-quot-et-sa-compatibilite-edge-et-wi-fi-qui-lui-permet-de-se-connecter-a-internet-en-plus-evidement-de-passer-des-appels-et-d-envoyer-des-textos-il-revolutionne-la-telephonie-mobile-et-est-elu-quot-invention-de-l-annee-quot-par-le-magazine-quot-time-quot-photo-apple-1483969070.jpg" width="10%" height="10%">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/IBM_Simon_Personal_Communicator.png/250px-IBM_Simon_Personal_Communicator.png" width="10%" height="10%">
+    <img src="https://www.engineersrule.com/wp-content/uploads/2016/02/IIot1.png" width="20%" height="20%">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Intel_C4004.jpg" width="20%" height="20%">
+    <br>
+    <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/leparisien/PUTZTJF7MFC6NHVDMKBAYJ2Q2M.jpg" width="20%" height="20%">
+    <img src="https://housse-ordinateur.com/cdn/shop/articles/evolution_frise_chronologique_de_l_ordinateur_MHO.jpg?v=1644750637&width=1100" width="20%" height="20%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ECwClDvJplGwBLB5dKZNQeo1pvj0Wjd8uQ&s" width="15%" height="15%">
+    <img src="https://aeroaffaires.fr/wp-content/uploads/2021/07/1200px-a350_first_flight_-_low_pass_03-1024x678.jpg" width="20%" height="20%">
+    <hr>
+    <h2>2. Test de connaissances</h2>
+    <p>Sur votre copie, écrire la question et la réponse en entier.</p>
+    <h4>Question 1</h4>
+    <div>
+        <img src="data:image/jpeg;base64,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" width="20%" height="20%">
+        <p>Un système informatique embarqué permet de :<br>
+        <strong>a.</strong> Relier plusieurs composants informatiques.<br>
+        <strong>b.</strong> Programmer un logiciel.<br>
+        <strong>c.</strong> Contrôler et piloter une machine.</p>
+    </div>
+    <h4>Question 2</h4>
+    <div>
+        <img src="data:image/jpeg;base64,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" width="20%" height="20%">
+        <p>La carte programmable d'un système informatique embarqué permet :<br>
+        <strong>a.</strong> D'exécuter des instructions.<br>
+        <strong>b.</strong> D'interroger un serveur de données.<br>
+        <strong>c.</strong> De simplifier le résultat d'un calcul.</p>
+    </div>
+    <h4>Question 3</h4>
+    <div>
+        <img src="data:image/jpeg;base64,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" width="20%" height="20%">
+        <p>L'implantation d'un programme dans un système informatique embarqué nécessite :<br>
+        <strong>a.</strong> La saisie d'informations.<br>
+        <strong>b.</strong> Une liaison filaire ou par ondes entre le système embarqué et un ordinateur.<br>
+        <strong>c.</strong> La déclaration des variables.</p>
+    </div>
+    <hr>
+    <h4>Question 4</h4>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Rover1.jpg/250px-Rover1.jpg" width="20%" height="20%">
+        <p>Un système informatique embarqué acquiert des informations grâce à :<br>
+        <strong>a.</strong> Son microprocesseur.<br>
+        <strong>b.</strong> sa mémoire.<br>
+        <strong>c.</strong> Ses capteurs.</p>
+    </div>
+    <h4>Question 5</h4>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Rover1.jpg/250px-Rover1.jpg" width="20%" height="20%">        
+        <p>Un composant qui mesure la température est :<br>
+        <strong>a.</strong> Un calculateur.<br>
+        <strong>b.</strong> Un capteur.<br>
+        <strong>c.</strong> Un actionneur.</p>
+    </div>
+    <h4>Question 6</h4>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Rover1.jpg/250px-Rover1.jpg" width="20%" height="20%">        
+        <p>Un composant qui doit émettre un signal sonore est :<br>
+        <strong>a.</strong> Un opérateur.<br>
+        <strong>b.</strong> Un capteur.<br>
+        <strong>c.</strong> Un actionneur.</p>
+    </div>
+    <hr>
+    <h4>Question 7</h4>
+    <div>
+        <img src="https://media.kartable.fr/uploads/finalImages/final_64467f2907fec2.32732898.jpg?1724316363" width="20%" height="20%"> 
+        <p>Un algorithme est une suite d'instructions qui permet :<br>
+        <strong>a.</strong> D'activer la mémoire d'un ordinateur.<br>
+        <strong>b.</strong> De résoudre un problème ou décrire le comportement d'un système.<br>
+        <strong>c.</strong> De faire le lien entre un utilisateur et un système.</p>
+    </div>
+    <h4>Question 8</h4>
+    <div>
+        <img src="https://media.kartable.fr/uploads/finalImages/final_64467f2907fec2.32732898.jpg?1724316363" width="20%" height="20%"> 
+        <p>Un programme Scratch commence par :<br>
+        <strong>a.</strong> Le traitement d'informations.<br>
+        <strong>b.</strong> L'affichage des calculs.<br>
+        <strong>c.</strong> Un évènement.</p>
+    </div>
+    <h4>Question 9</h4>
+    <div>
+        <img src="https://media.kartable.fr/uploads/finalImages/final_64467f2907fec2.32732898.jpg?1724316363" width="20%" height="20%"> 
+        <p>L'instruction "si d < 15 alors reculer" permet de :<br>
+        <strong>a.</strong> Mesurer la température d'une machine.<br>
+        <strong>b.</strong> Détecter la distance d'un obstacle.<br>
+        <strong>c.</strong> Lire un QR Code.</p>
+    </div>
+    <hr>
+    <h4>Question 10</h4>
+    <div>
+        <img src="https://wordpress.callac.online/wp-content/uploads/2014/02/png_ecran-3.png" width="15%" height="15%">
+        <p>Une interface est :<br>
+        <strong>a.</strong> Une machine qui remplace les êtres humains.<br>
+        <strong>b.</strong> Un dispositif (écran, boîtier, commande vocale) qui permet aux hommes de contrôler une machine.<br>
+        <strong>c.</strong> Un dispositif (écran, boîtier, commande vocale) qui relie plusieurs machines.</p>
+    </div>
+    <h4>Question 11</h4>
+    <div>
+        <img src="https://wordpress.callac.online/wp-content/uploads/2014/02/png_ecran-3.png" width="15%" height="15%">
+        <p>Pour réaliser l'interface d'une application pilotant un objet, on doit :<br>
+        <strong>a.</strong> Créer des sous-programmes.<br>
+        <strong>b.</strong> Tester une condition.<br>
+        <strong>c.</strong> Dessiner des objets (boutons, zones de texte, cases à cocher, ect...).</p>
+    </div>
+    <h4>Question 12</h4>
+    <div>
+        <img src="https://wordpress.callac.online/wp-content/uploads/2014/02/png_ecran-3.png" width="15%" height="15%">
+        <p>Une interface entre une machine et un homme assure une fonction :<br>
+        <strong>a.</strong> D'automatisation.<br>
+        <strong>b.</strong> De communication.<br>
+        <strong>c.</strong> De traitement.</p>
+    </div>
+    <hr>
+    <h2>3. Interface Homme-Machine</h2>
+    <h3>Exercice 1 : Système Informatique Embarqué (SIE)</h3>
+    <p>Un SIE est un système alliant électronique et informatique. L'objectif est de faire réaliser une tâche bien précise à un objet dit autonome, capable d'acquérir une donnée, de la traiter et de la transmettre.
+    Généralement, il faut une interface utilisateur pour qu'un individu puisse l'utiliser.
+    <br>Ses ressources sont généralement limitées : en terme d'espace de stockage des données, de puissance de calcul, d'autonomie puisque sa consommation d'énergie
+    est restreinte, et de sûretée car une défaillance système pourrait mettre en jeu des vies humaines.</p>
+    <h4>Consigne : Pour chaque domaine suivant, définir la contrainte associé à l'utilisation d'un SIE.</h4>
+    <p><strong>Autonomie : .................................................................................</strong></p>
+    <p><strong>Temps : .........................................................................................</strong></p>
+    <p><strong>Sécurité : ......................................................................................</strong></p>
+    <p><strong>Pertinence / Fiabilité : ................................................................</strong></p>
+    <p><strong>Le packaging : .............................................................................</strong></p>
+    <hr>
+    <h3>Exercice 2 : Chaînes d'information et d'action</h3>
+    <p>Les SIE sont fabriqués pour répondre à un besoin en réaction à une situation présente.
+    L'information récoltée par les capteurs d'après la consigne de l'utilisateur ou des paramètres extérieurs est transmise au logiciel, qui va ensuite donner les ordres aux actionneurs pour réaliser l'action demandée.
+    <br>L'information détectée peut être d'une grande diversité, ce qui implique une grande variété de types de capteurs.
+    Parmi les plus fréquents, on retrouve les capteurs de position, de présence, de vitesse, de température et de niveau.</p>
+    <h4>Consigne : Classer les éléments suivants dans le tableau en fonction de leur catégorie.</h4>
+    <p>capteur de présence - babyphone - alarme incendie - détecteur de passage - microphone - détecteur d'intrusion - capteur magnétique - thermistance - alarme volumétrique - cellule photoélectrique</p>
+    <table>
+        <tr>
+            <th class="capteur">Capteurs</th>
+            <th>Mesures physiques</th>
+            <th>Exemples d'utilisation</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Mouvement</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Son</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Champ magnétique</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Lumière</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Chaleur</td>
+            <td></td>
+        </tr>
+    </table>
+    <br><hr>
+    <h3>Exercice 3 : Technologies de communication</h3>
+    <h4>Consigne : Chercher en ligne quelles sont les différentes technologies de communication des objets connectés en fonction de leur portée et remplir le tableau avec les caractéristiques des technologies indiquées.</h4>
+    <table>
+        <tr>
+            <td class="nop"></td>
+            <th colspan="2">Courte portée</th>
+            <th colspan="2">Moyenne portée</th>
+            <th colspan="2">Longue portée</th>
+        </tr>
+        <tr>
+            <th>Technologie</th>
+            <th>NFC</th>
+            <th>Bluetooth</th>
+            <th>Z-Wave</th>
+            <th>Wi-Fi</th>
+            <th>Sig-Fox</th>
+            <th>LoRa</th>
+        </tr>
+        <tr>
+            <th>Portée moyenne (en intérieur)</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Débit approximatif (bit/s)</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Exemples d'usages</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
